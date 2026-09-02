@@ -14,3 +14,26 @@
     font-display: swap;
 }
 
+:root {
+    --white: #FFFFFF;
+    --black:#000000;
+    --dark: #161815;
+    --grey: #909090;
+    --green: #6DE754;
+
+    --font-family: 'SFProDisplay', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semibold: 600;
+
+    --text-preset-1: var(--fw-regular) var(--font-family);
+    --text-preset-2: var(--fw-semibold) var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
