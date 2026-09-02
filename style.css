@@ -36,4 +36,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--dark);
+    max-width: 1512px;
+}
+
 
