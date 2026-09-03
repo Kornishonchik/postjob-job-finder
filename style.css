@@ -25,9 +25,6 @@
 
     --fw-regular: 400;
     --fw-semibold: 600;
-
-    --text-preset-1: var(--fw-regular) var(--font-family);
-    --text-preset-2: var(--fw-semibold) var(--font-family);
 }
 
 * {
@@ -64,7 +61,7 @@ ul {
 }
 
 .header__nav a {
-    font: var(--text-preset-2);
+    font-weight: var(--fw-semibold);
     font-size: 16px;
     color: var(--grey);
 }
@@ -76,11 +73,12 @@ ul {
 }
 
 .buttons {
-    /*gap: 16px;*/
+    display: flex;
+    gap: 16px;
 }
 
 .button-1 {
-    font: var(--text-preset-2);
+    font-weight: var(--fw-semibold);
     font-size: 16px;
     color: var(--white);
     padding: 12px 32px;
@@ -92,7 +90,7 @@ ul {
 }
 
 .button-2 {
-    font: var(--text-preset-2);
+    font-weight: var(--fw-semibold);
     font-size: 16px;
     color: var(--black);
     padding: 12px 32px;
