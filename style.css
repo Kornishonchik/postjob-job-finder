@@ -46,6 +46,13 @@ ul {
     list-style: none;
 }
 
+input, button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
 .header {
     width: 100%;
     padding-top: 64px;
@@ -58,6 +65,8 @@ ul {
 
     max-width: 1304px;
     margin: 0 auto;
+
+    margin-bottom: 80px;
 }
 
 .header__nav a {
@@ -99,3 +108,57 @@ ul {
     border-radius: 12px;
 }
 
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 852px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-weight: var(--fw-semibold);
+    font-size: 88px;
+    color: var(--white);
+
+    margin-bottom: 20px;
+}
+
+.hero__title-style {
+    color: var(--green);
+    font-size: 88px;
+}
+
+.hero__subtitle {
+    max-width: 474px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    letter-spacing: 0.02em;
+    line-height: 24px;
+
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: var(--fw-regular);
+}
+
+.hero__form {
+    display: flex;
+    align-items: center;
+    
+    background-color: var(--dark);
+    border: 1px solid var(--grey);
+    border-radius: 16px;
+    padding: 6px 6px 6px 20px; /* 20px зліва для тексту, 6px справа для кнопки */
+    
+    max-width: 480px;
+    width: 100%;
+}
+
+.hero__form input {
+    flex: 1;                  /* Інпут займає ВЕСЬ вільний простір зліва */
+    color: var(--white);
+    font-size: 16px;
+}
