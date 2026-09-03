@@ -37,8 +37,34 @@
 }
 
 body {
+    font-family: var(--font-family);
     background-color: var(--dark);
-    max-width: 1512px;
 }
 
+a {
+    text-decoration: none;
+}
 
+ul {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1304px;
+    margin: 0 auto;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
