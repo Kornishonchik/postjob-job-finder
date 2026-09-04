@@ -226,3 +226,30 @@ input, button {
     letter-spacing: 2%;
     line-height: 22px;
 }
+
+.promo {
+    
+}
+
+.promo__container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    max-width: 1416px;
+    margin: 0 auto;
+}
+
+.promo__card {
+    background-color: var(--green);
+}
+
+.promo__title {
+    max-width: 420px;
+    font-size: 48px;
+    font-weight: var(--fw-semibold);
+}
+
+.promo__secondary-title {
+
+}
