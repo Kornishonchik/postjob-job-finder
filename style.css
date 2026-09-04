@@ -18,6 +18,7 @@
     --white: #FFFFFF;
     --black:#000000;
     --dark: #161815;
+    --heller-dark: #1E201D;
     --grey: #909090;
     --green: #6DE754;
     --dark-green: #1F392C;
@@ -74,6 +75,11 @@ input, button {
     font-weight: var(--fw-semibold);
     font-size: 16px;
     color: var(--grey);
+}
+
+.header__nav a:hover {
+    color: var(--white);
+    transition: 0.3s ease;
 }
 
 .header__list {
@@ -156,6 +162,8 @@ input, button {
     
     max-width: 480px;
     width: 100%;
+
+    margin-bottom: 56px;
 }
 
 .hero__form input {
@@ -171,4 +179,50 @@ input, button {
 
     border-radius: 12px;
     padding: 12px 32px;
+}
+
+/* Перекриття дефолтного фону та кольору тексту при автозаповненні */
+.hero__form input:-webkit-autofill,
+.hero__form input:-webkit-autofill:hover, 
+.hero__form input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--white) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--dark) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.features {
+    margin-bottom: 106px;
+}
+
+.features__container {
+    display: flex;
+    gap: 32px;
+
+    max-width: 1147px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: var(--heller-dark);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.feature-card__title {
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    color: var(--white);
+
+    padding-block: 16px;
+    letter-spacing: 2%;
+    line-height: 20px;
+}
+
+.feature-card__description {
+    font-weight: var(--fw-regular);
+    font-size: 16px;
+    color: var(--grey);
+
+    letter-spacing: 2%;
+    line-height: 22px;
 }
