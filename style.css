@@ -20,6 +20,7 @@
     --dark: #161815;
     --grey: #909090;
     --green: #6DE754;
+    --dark-green: #1F392C;
 
     --font-family: 'SFProDisplay', sans-serif;
 
@@ -151,14 +152,23 @@ input, button {
     background-color: var(--dark);
     border: 1px solid var(--grey);
     border-radius: 16px;
-    padding: 6px 6px 6px 20px; /* 20px зліва для тексту, 6px справа для кнопки */
+    padding: 8px 8px 8px 40px;
     
     max-width: 480px;
     width: 100%;
 }
 
 .hero__form input {
-    flex: 1;                  /* Інпут займає ВЕСЬ вільний простір зліва */
+    flex: 1;                 
     color: var(--white);
     font-size: 16px;
+}
+
+.submit {
+    background-color: var(--green);
+    color: var(--dark-green);
+    font-weight: var(--fw-semibold);
+
+    border-radius: 12px;
+    padding: 12px 32px;
 }
