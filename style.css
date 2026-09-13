@@ -115,6 +115,10 @@ input, button {
     border-radius: 12px;
 }
 
+.header__logo {
+    cursor: pointer;
+}
+
 .hero__container {
     display: flex;
     flex-direction: column;
@@ -176,6 +180,7 @@ input, button {
     background-color: var(--green);
     color: var(--dark-green);
     font-weight: var(--fw-semibold);
+    cursor: pointer;
 
     border-radius: 12px;
     padding: 12px 32px;
@@ -227,8 +232,8 @@ input, button {
     line-height: 22px;
 }
 
-.promo {
-    
+promo {
+    margin-bottom: 69px;
 }
 
 .promo__container {
@@ -259,5 +264,37 @@ input, button {
 .promo__secondary-title {
     font-size: 152px;
     font-weight: var(--fw-semibold);
-    margin-bottom: 12px;
+}
+
+.promo__image-wrapper {
+    position: relative;
+    max-width: 1302px;
+    width: 100%;
+    margin: 0 auto;
+
+    margin-top: 12px;
+}
+
+.promo__image-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(180deg, rgba(109, 231, 84, 0) 0%, #6DE754 160%);
+    
+    pointer-events: none;
+    z-index: 2;
+}
+
+.promo__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.promo__logo {
+    position: absolute;
+    top: 39px;
+    left: 26px;
+    z-index: 2;
 }
