@@ -266,6 +266,12 @@ promo {
     font-weight: var(--fw-semibold);
 }
 
+.promo__description {
+    font-weight: var(--fw-regular);
+    letter-spacing: 2%;
+    /*line-height: 24;*/
+}
+
 .promo__image-wrapper {
     position: relative;
     max-width: 1302px;
