@@ -139,7 +139,6 @@ input, button {
 
 .hero__title-style {
     color: var(--green);
-    font-size: 88px;
 }
 
 .hero__subtitle {
@@ -232,7 +231,7 @@ input, button {
     line-height: 22px;
 }
 
-promo {
+.promo {
     margin-bottom: 69px;
 }
 
@@ -268,8 +267,8 @@ promo {
 
 .promo__description {
     font-weight: var(--fw-regular);
-    letter-spacing: 2%;
-    /*line-height: 24;*/
+    letter-spacing: 0.02em;
+    line-height: 24px;
 }
 
 .promo__image-wrapper {
@@ -303,4 +302,70 @@ promo {
     top: 39px;
     left: 26px;
     z-index: 2;
+}
+
+.services {
+    margin-bottom: 80px;
+}
+
+.services__container {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 1147px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.services__header-title {
+    font-weight: var(--fw-semibold);
+    font-size: 48px;
+    color: var(--white);
+    padding-bottom: 16px;
+}
+
+.services__header-subtitle {
+    font-weight: var(--fw-regular);
+    font-size: 16px;
+    color: var(--grey);
+    margin-bottom: 16px;
+
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.services__header-button {
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    color: var(--white);
+
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: var(--green);
+
+    padding: 12px 32px;
+    cursor: pointer;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    
+    max-width: 1147px;
+    width: 100%;
+    margin: 0 auto;
 }
