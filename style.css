@@ -55,6 +55,8 @@ input, button {
     background: transparent;
 }
 
+/* === HEADER === */
+
 .header {
     width: 100%;
     padding-top: 64px;
@@ -118,6 +120,8 @@ input, button {
 .header__logo {
     cursor: pointer;
 }
+
+/* === HERO === */
 
 .hero__container {
     display: flex;
@@ -194,6 +198,8 @@ input, button {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+/* === FEATURES === */
+
 .features {
     margin-bottom: 106px;
 }
@@ -230,6 +236,8 @@ input, button {
     letter-spacing: 0.02rem;
     line-height: 22px;
 }
+
+/* === PROMO === */
 
 .promo {
     margin-bottom: 69px;
@@ -304,6 +312,8 @@ input, button {
     z-index: 2;
 }
 
+/* === SERVICES === */
+
 .services {
     margin-bottom: 80px;
 }
@@ -369,6 +379,8 @@ input, button {
     width: 100%;
     margin: 0 auto;
 }
+
+/* === SHOWCASE === */
 
 .showcase {
     background-color: var(--green);
@@ -437,4 +449,64 @@ input, button {
 
 .showcase__content-reversed {
     margin-left: 80px;
+}
+
+/* === TEMPLATES === */
+
+.templates {
+    background-color: var(--dark);
+    /* padding: 40px 0; */
+}
+
+.templates__container {
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.templates__content {
+    max-width: 479px;
+    width: 100%;
+
+    margin-right: 32px;
+}
+
+.templates__title {
+    font-size: 48px;
+    font-weight: var(--fw-semibold);
+    color: var(--white);
+
+    padding-bottom: 24px;
+}
+
+.templates__description {
+    max-width: 456px;
+    width: 100%;
+
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: var(--fw-regular);
+    color: var(--grey);
+
+    padding-bottom: 24px;
+}
+
+.templates__button {
+    border: solid;
+    border-width: 1px;
+    border-color: var(--green);
+    border-radius: 12px;
+
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-size: 16px;
+    font-weight: var(--fw-semibold);
+    color: var(--white);
+
+    padding: 12px 32px;
 }
