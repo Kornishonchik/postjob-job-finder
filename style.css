@@ -369,3 +369,72 @@ input, button {
     width: 100%;
     margin: 0 auto;
 }
+
+.showcase {
+    background-color: var(--green);
+    padding: 40px 0;
+}
+
+.showcase__container {
+    max-width: 1036px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase__item {
+    max-width: 1036px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase__content {
+    max-width: 456px;
+    width: 100%;
+
+    margin-right: 80px;
+}
+
+.showcase__title {
+    font-size: 48px;
+    font-weight: var(--fw-semibold);
+
+    padding-bottom: 24px;
+}
+
+.showcase__description {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    padding-bottom: 24px;
+}
+
+.showcase__button {
+    border: solid;
+    border-width: 1px;
+    border-color: #161815;
+    border-radius: 12px;
+
+    color: var(--black);
+    font-size: 16px;
+    font-weight: var(--fw-semibold);
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    padding: 12px 32px;
+}
+
+.showcase__item--reversed {
+    display: flex;
+    flex-direction: row-reverse;    
+}
+
+.showcase__content-reversed {
+    margin-left: 80px;
+}
