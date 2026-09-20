@@ -418,7 +418,7 @@ input, button {
 .showcase__button {
     border: solid;
     border-width: 1px;
-    border-color: #161815;
+    border-color: var(--dark);
     border-radius: 12px;
 
     color: var(--black);
