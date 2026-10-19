@@ -586,6 +586,8 @@ input, button {
     line-height: 22px;
     letter-spacing: 0.02em;
 
+    display: flex;
+    flex-direction: column;
     gap: 12px;
     padding-bottom: 40px;
 }
